@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    width: 80vw;
+    grid-template-rows: 200px 80px 200px auto auto auto 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "image image image image" 
+    "header header header header" 
+    "filtercontainer main main main" 
+    "filtercontainer main main main" 
+    "filtercontainer main main main" 
+    "filtercontainer main main main" 
+    "footer footer footer footer"
+}
+
+.image {
+    grid-area: image;
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.filtercontainer {
+    display: grid;
+    grid-area: filtercontainer;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    background-color: bisque;
+}
+
+.main .casa {
+    background-color: #e6f9ff;
+    margin: 25px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "houseimage street"
+    "houseimage price"
+    "houseimage generalhouseinfo"
+    "houseimage morehouseinfo"
+}
+
+.houseimage {
+    grid-area: houseimage;
+}
+
+.street {
+    grid-area: street;
+}
+
+.price {
+    grid-area: price;
+}
+
+.generalhouseinfo {
+    grid-area: generalhouseinfo;
+}
+
+.morehouseinfo {
+    grid-area: morehouseinfo;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+div div{
+    border: 1px solid black;
+}
+
+.casa > *{
+    border: none;
+}
+
+.casa {
+    border: none;
+}
+
+.casa img {
+    max-width: 300px;
+    max-height: 204px;
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+}
