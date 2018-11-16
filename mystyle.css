@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
+    font-family: 'Arvo', serif;
 }
 
 .container {
     display: grid;
     width: 80vw;
-    grid-template-rows: 200px 80px 200px auto auto auto 100px;
+    grid-template-rows: 200px 50px auto auto auto auto 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "image image image image" 
@@ -30,6 +31,7 @@
 .filtercontainer {
     display: grid;
     grid-area: filtercontainer;
+    grid-template-rows: 100px 100px 100px 100px;
 }
 
 .main {
@@ -78,10 +80,6 @@
     grid-area: footer;
 }
 
-div div{
-    border: 1px solid black;
-}
-
 .casa > *{
     border: none;
 }
@@ -97,3 +95,16 @@ div div{
     height: 100%;
     border-radius: 15px;
 }
+
+.login {
+    text-align: right;
+}
+
+.register {
+    text-align: right;
+}
+
+button {
+    background-color: white;
+}
+
