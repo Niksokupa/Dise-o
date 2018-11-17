@@ -5,8 +5,7 @@
 
 .container {
     display: grid;
-    width: 80vw;
-    grid-template-rows: 200px 50px auto auto auto auto 100px;
+    grid-template-rows: 200px 50px auto auto auto auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "image image image image" 
@@ -20,12 +19,16 @@
 
 .image {
     grid-area: image;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
 }
 
 .header {
     display: grid;
     grid-area: header;
     grid-template-columns: 2fr 1fr 1fr;
+    background-color: white;
+    border-radius: 0 0 15px 0;
 }
 
 .filtercontainer {
@@ -38,6 +41,20 @@
 .filtercontainer div p{
     font-size: 18px;
     font-weight: bold;
+    border-top: 2px solid #003034;
+}
+
+.filtercontainer .pricefilter p{
+    border-top-color: transparent;
+}
+
+.footer div p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer div {
+    text-align: center;
 }
 
 .main {
@@ -82,7 +99,13 @@
 }
 
 .footer {
+    background-color: white;
+    border-radius: 0 15px 15px 15px;
     grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "about help socials"
 }
 
 .casa > *{
@@ -110,7 +133,7 @@
 }
 
 button {
-    background-color: white;
+    background-color:rgba(0, 0, 0, 0);
 }
 
 
@@ -122,3 +145,39 @@ button {
     font-size: 18px!important;
 }
 
+
+/* Medium devices 
+
+No sé porqué solo me funciona en el pixel exacto de ancho 768, al bajar queda extraño, creo que es por el bootstrap.
+
+*/
+@media (max-width: 768px) { 
+
+    .container {
+        display: grid;
+        width: 80vw;
+        grid-template-rows: 200px 50px 50px auto auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "image" 
+        "header" 
+        "filtercontainer" 
+        "filtercontainer" 
+        "filtercontainer" 
+        "filtercontainer"
+        "main"
+        "footer"
+    }
+
+    .header {
+        border-radius: 0;
+    }
+
+    .filtercontainer {
+        border-radius: 0 0 15px 15px;
+    }
+
+    .footer {
+        border-radius: 15px 15px 15px 15px;
+    }
+}

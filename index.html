@@ -21,15 +21,15 @@
     <title>CasaFácil</title>
 </head>
 
-<body>
+<body style="background-color: #4A919B">
     <div class="container mt-2 mb-2">
-        <div class="image d-flex justify-content-between">
+        <div class="image d-flex justify-content-between pl-2 pt-2 pr-2">
             <img src="favicon.png">
             <p style="font-size: 75px">CasaFácil</p>
         </div>
         <div class="header">
-            <div class="citychooser">
-                <select class="custom-select cityselect">
+            <div class="citychooser pl-2">
+                <select class="custom-select cityselect border border-dark">
                     <optgroup>
                         <option selected>Escoja una ciudad</option>
                         <option value="1">Valencia</option>
@@ -52,7 +52,7 @@
                 </button>
             </div>
         </div>
-        <div class="filtercontainer pr-3 pl-2">
+        <div class="filtercontainer pt-2 pr-3 pl-2">
             <div class="pricefilter">
                 <p>Precio:</p>
                 <div class=" d-flex justify-content-between">
@@ -149,15 +149,15 @@
                     <p>Extras:</p>
                 </div>
                 <div class="form-check col-6">
-                    <input class="form-check-input ml-1" type="checkbox" value="" id="piscina">
-                    <label class="form-check-label ml-4" for="piscina">
-                        Piscina
+                    <input class="form-check-input ml-1" type="checkbox" value="" id="parque">
+                    <label class="form-check-label ml-4" for="parque">
+                        Parqué
                     </label>
                 </div>
                 <div class="form-check col-6">
-                    <input class="form-check-input" type="checkbox" value="" id="ascensor">
-                    <label class="form-check-label" for="ascensor">
-                        Ascensor
+                    <input class="form-check-input" type="checkbox" value="" id="jacuzzi">
+                    <label class="form-check-label" for="jacuzzi">
+                        Jacuzzi
                     </label>
                 </div>
                 <div class="form-check col-6">
@@ -203,11 +203,35 @@
                 <div class="morehouseinfo"><a href="#">Más información</a></div>
             </div>
         </div>
-        <div class="footer">footer </div>
+        <div class="footer pt-2 pb-2">
+            <div class="about">
+                <p>Sobre CasaFácil</p>
+                <a href="#">¿Quiénes somos?</a><br>
+                <a href="#">Trabaja con nosotros</a><br>
+                <a href="#">Novedades</a><br>
+            </div>
+            <div class="help">
+                <p>Ayuda</p>
+                <a href="#">Mapa web</a><br>
+                <a href="#">Preguntas frecuentes</a><br>
+                <a href="#">Política de cookies</a><br>
+                <a href="#">Condiciones generales</a><br>
+                <a href="#">Contacta con nosotros</a><br>
+            </div>
+            <div class="socials">
+                <p>Redes Sociales:</p>
+                <div class="d-flex justify-content-around">
+                    <a href="#"><i class="fab fa-2x fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-2x fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-2x fa-instagram"></i></a>
+                </div>
+                <br>
+                <div class="copyright d-flex justify-content-center">
+                    <p>CasaFácil Copyright © 2018</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
 </body>
 
 </html>
