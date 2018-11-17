@@ -23,8 +23,9 @@
 
 <body>
     <div class="container mt-2 mb-2">
-        <div class="image">
-            image
+        <div class="image d-flex justify-content-between">
+            <img src="favicon.png">
+            <p style="font-size: 75px">CasaFácil</p>
         </div>
         <div class="header">
             <div class="citychooser">
@@ -51,11 +52,11 @@
                 </button>
             </div>
         </div>
-        <div class="filtercontainer mr-3">
+        <div class="filtercontainer pr-3 pl-2">
             <div class="pricefilter">
                 <p>Precio:</p>
                 <div class=" d-flex justify-content-between">
-                    <select style="width:42%" class="custom-select minprice">
+                    <select style="width:42%" class="custom-select minprice border border-dark">
                         <optgroup>
                             <option selected>Mínimo</option>
                             <option value="1">25.000€</option>
@@ -63,7 +64,7 @@
                             <option value="3">50.000€</option>
                         </optgroup>
                     </select>
-                    <select style="width:42%" class="custom-select maxprice">
+                    <select style="width:42%" class="custom-select maxprice border border-dark">
                         <optgroup>
                             <option selected>Máximo</option>
                             <option value="1">125.000€</option>
@@ -73,14 +74,110 @@
                     </select>
                 </div>
             </div>
-            <div class="typefilter">
-                tipo
+            <div class="typefilter row">
+                <div class="col-12" style="height:1%;">
+                    <p>Tipo:</p>
+                </div>
+                <div class="form-check col-6">
+                    <input class="form-check-input ml-1" type="checkbox" value="" id="casa">
+                    <label class="form-check-label ml-4" for="casa">
+                        Casa
+                    </label>
+                </div>
+                <div class="form-check col-6">
+                    <input class="form-check-input" type="checkbox" value="" id="piso">
+                    <label class="form-check-label" for="piso">
+                        Piso
+                    </label>
+                </div>
+                <div class="form-check col-6">
+                    <input class="form-check-input ml-1" type="checkbox" value="" id="loft">
+                    <label class="form-check-label ml-4" for="loft">
+                        Loft
+                    </label>
+                </div>
+                <div class="form-check col-6">
+                    <input class="form-check-input" type="checkbox" value="" id="duplex">
+                    <label class="form-check-label" for="duplex">
+                        Dúplex
+                    </label>
+                </div>
+                <div class="form-check col-6">
+                    <input class="form-check-input ml-1" type="checkbox" value="" id="atico">
+                    <label class="form-check-label ml-4" for="atico">
+                        Ático
+                    </label>
+                </div>
             </div>
-            <div class="specsfilter">
-                caracteristicas
+            <div class="specsfilter row">
+                <div class="col-12" style="height:1%;">
+                    <p>Características:</p>
+                </div>
+                <div class="form-check col-6">
+                    <input class="form-check-input ml-1" type="checkbox" value="" id="piscina">
+                    <label class="form-check-label ml-4" for="piscina">
+                        Piscina
+                    </label>
+                </div>
+                <div class="form-check col-6">
+                    <input class="form-check-input" type="checkbox" value="" id="ascensor">
+                    <label class="form-check-label" for="ascensor">
+                        Ascensor
+                    </label>
+                </div>
+                <div class="form-check col-6">
+                    <input class="form-check-input ml-1" type="checkbox" value="" id="trastero">
+                    <label class="form-check-label ml-4" for="trastero">
+                        Trastero
+                    </label>
+                </div>
+                <div class="form-check col-6">
+                    <input class="form-check-input" type="checkbox" value="" id="terraza">
+                    <label class="form-check-label" for="terraza">
+                        Terraza
+                    </label>
+                </div>
+                <div class="form-check col-6">
+                    <input class="form-check-input ml-1" type="checkbox" value="" id="garaje">
+                    <label class="form-check-label ml-4" for="garaje">
+                        Garaje
+                    </label>
+                </div>
             </div>
-            <div class="extrasfilter">
-                extras
+            <div class="extrasfilter row">
+                <div class="col-12" style="height:1%;">
+                    <p>Extras:</p>
+                </div>
+                <div class="form-check col-6">
+                    <input class="form-check-input ml-1" type="checkbox" value="" id="piscina">
+                    <label class="form-check-label ml-4" for="piscina">
+                        Piscina
+                    </label>
+                </div>
+                <div class="form-check col-6">
+                    <input class="form-check-input" type="checkbox" value="" id="ascensor">
+                    <label class="form-check-label" for="ascensor">
+                        Ascensor
+                    </label>
+                </div>
+                <div class="form-check col-6">
+                    <input class="form-check-input ml-1" type="checkbox" value="" id="obranueva">
+                    <label class="form-check-label ml-4" for="obranueva">
+                        Obra nueva
+                    </label>
+                </div>
+                <div class="form-check col-6">
+                    <input class="form-check-input" type="checkbox" value="" id="reforma">
+                    <label class="form-check-label" for="reforma">
+                        Por reformar
+                    </label>
+                </div>
+                <div class="form-check col-12">
+                    <input class="form-check-input ml-1" type="checkbox" value="" id="aire">
+                    <label class="form-check-label ml-4" for="aire">
+                        Aire acondicionado
+                    </label>
+                </div>
             </div>
         </div>
         <div class="main">
@@ -108,6 +205,9 @@
         </div>
         <div class="footer">footer </div>
     </div>
+
+
+
 </body>
 
 </html>

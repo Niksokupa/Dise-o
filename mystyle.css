@@ -31,19 +31,24 @@
 .filtercontainer {
     display: grid;
     grid-area: filtercontainer;
-    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-rows: 100px auto auto auto;
+    background-color: #087C87;
+}
+
+.filtercontainer div p{
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .main {
     grid-area: main;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-
-    background-color: bisque;
+    background-color: #4A919B;
 }
 
 .main .casa {
-    background-color: #e6f9ff;
+    background-color: #9AEEFA;
     margin: 25px;
     border-radius: 15px;
     display: grid;
@@ -106,5 +111,14 @@
 
 button {
     background-color: white;
+}
+
+
+.citychooser option {
+    font-size: 25px!important;
+}
+
+.citychooser select {
+    font-size: 18px!important;
 }
 
